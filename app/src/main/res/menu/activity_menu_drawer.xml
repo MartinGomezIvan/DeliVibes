@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nave_item_one"
+            android:title="Restaurante"
+            android:icon="@drawable/baseline_food_bank_24">
+            <menu>
+                <item
+                    android:id="@+id/nave_item_six"
+                    android:title="Nuestro menú"/>
+                <item
+                    android:id="@+id/nave_item_seven"
+                    android:title="Reservas"/>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nave_item_two"
+            android:title="Tienda"
+            android:icon="@drawable/baseline_shopping_bag_24">
+            <menu>
+                <item
+                    android:id="@+id/nave_item_eight"
+                    android:title="Nuestros productos"/>
+                <item
+                    android:id="@+id/nave_item_nine"
+                    android:title="Comprar"/>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nave_item_three"
+            android:title="Promociones"
+            android:icon="@drawable/baseline_stars_24"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nave_item_four"
+            android:title="Preguntas"
+            android:icon="@drawable/baseline_question_mark_24"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nave_item_five"
+            android:title="Términos y condiciones"
+            android:icon="@drawable/baseline_check_circle_outline_24"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/nave_item_ten"
+            android:title="Cuenta"
+            android:icon="@drawable/baseline_account_circle_24"/>
+    </group>
+</menu>
