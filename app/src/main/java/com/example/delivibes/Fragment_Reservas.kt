@@ -1,33 +1,31 @@
 package com.example.delivibes
 
+import android.app.AlertDialog
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.CalendarView
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.TimePicker
+import android.widget.Toast
+import android.widget.ToggleButton
+import androidx.navigation.Navigation.findNavController
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Fragment_Reservas.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Fragment_Reservas : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var nombreEditText: EditText
+    private lateinit var telefonoEditText: EditText
+    private lateinit var tarjetaEditText: EditText
+    private lateinit var codigoPostalEditText: EditText
+    private lateinit var numeroPersonas: EditText
+    private lateinit var calendarView: CalendarView
+    private lateinit var timePicker: TimePicker
+    private lateinit var pagarButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,23 +35,67 @@ class Fragment_Reservas : Fragment() {
         return inflater.inflate(R.layout.fragment__reservas, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Fragment_Reservas.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Fragment_Reservas().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        nombreEditText = view.findViewById(R.id.nombre)
+        telefonoEditText = view.findViewById(R.id.telefono)
+        tarjetaEditText = view.findViewById(R.id.tarjeta)
+        codigoPostalEditText = view.findViewById(R.id.codigoPostal)
+        calendarView = view.findViewById(R.id.calendarView)
+        timePicker = view.findViewById(R.id.timePicker)
+        pagarButton = view.findViewById(R.id.button3)
+        numeroPersonas = view.findViewById(R.id.numeroPersonas)
+
+
+        pagarButton.setOnClickListener {
+            pulsarBotonPagar()
+        }
     }
+
+    fun pulsarBotonPagar() {
+        val nombre = nombreEditText.text.toString()
+        val telefono = telefonoEditText.text.toString()
+        val tarjeta = tarjetaEditText.text.toString()
+        val codigoPostal = codigoPostalEditText.text.toString()
+        val numeroPersonas = numeroPersonas.text.toString()
+        val fechaSeleccionada = calendarView.date
+        val horaSeleccionada = "${timePicker.hour}:${timePicker.minute}"
+        if (nombre.equals("") || telefono.equals("") || tarjeta.equals("") || codigoPostal.equals("") || fechaSeleccionada.equals("") || horaSeleccionada.equals("")
+            || numeroPersonas.equals("")){
+
+            val builder = AlertDialog.Builder(requireContext())
+            builder.setMessage("Seleccione y rellene todos los campos para pagar")
+            builder.setPositiveButton("Aceptar"){
+                    dialog, _ ->dialog.dismiss()
+            }
+            val alertDialog: AlertDialog = builder.create()
+            alertDialog.show()
+
+
+        }else if (!numeroPersonas.contains("1 persona") && !numeroPersonas.contains("2 personas") && !numeroPersonas.contains("4 personas")){
+            val builder = AlertDialog.Builder(requireContext())
+            builder.setMessage("El número de personas a reservar sólo puede ser de 1, 2 o 4")
+            builder.setPositiveButton("Aceptar"){
+                    dialog, _ ->dialog.dismiss()
+            }
+            val alertDialog: AlertDialog = builder.create()
+            alertDialog.show()
+
+        }else{
+            val builder = AlertDialog.Builder(requireContext())
+            builder.setMessage("Pago realizado correctmente")
+            builder.setPositiveButton("Aceptar"){
+                    dialog, _ ->dialog.dismiss()
+            }
+            val alertDialog: AlertDialog = builder.create()
+            alertDialog.show()
+
+//            val action = fragment_c.actionFragmentReservasToOtroFragmento()
+//            findNavController().navigate(action)
+            //Que nos lleve a la página principal
+            //Que lo inserte en la base de datos
+        }
+    }
+
+
 }

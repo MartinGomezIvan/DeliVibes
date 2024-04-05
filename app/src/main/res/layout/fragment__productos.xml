@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Productos"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="151dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="255dp"
+        android:text="Nuestros productos" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto1" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto"
+                            android:layout_marginTop="16dp"
+                            android:text="Culetón de vaca madurada"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:background="#66C2FF"
+                            android:onClick="boton1pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto2" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto2"
+                            android:layout_marginTop="16dp"
+                            android:text="Lubina salvaje de temporada"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton2pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto3" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto3"
+                            android:layout_marginTop="16dp"
+                            android:text="Trufa negra (Melanosporum)"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton3pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto5" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto4"
+                            android:layout_marginTop="16dp"
+                            android:text="Revuelto de setas variadas"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto4"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton4pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            ////////////////////////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto6" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto5"
+                            android:layout_marginTop="16dp"
+                            android:text="Huevo de gallina en natural"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto5"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="41dp"
+                            android:layout_marginEnd="-2dp"
+                            android:onClick="boton5pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto7" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto6"
+                            android:layout_marginTop="16dp"
+                            android:text="Queso semicurado de oveja"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto6"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="41dp"
+                            android:layout_marginEnd="1dp"
+                            android:onClick="boton6pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto8" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto7"
+                            android:layout_marginTop="16dp"
+                            android:text="Mermelada de frambuesa"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto7"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton7pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto11" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto8"
+                            android:layout_marginTop="16dp"
+                            android:text="Chorizo criollo de Galicia"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto8"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton8pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto12" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto9"
+                            android:layout_marginTop="16dp"
+                            android:text="Solomillo de cerdo premium"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto9"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton9pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView13"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto13" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto13"
+                            android:layout_marginTop="16dp"
+                            android:text="Arroz blanco de India"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto13"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="16dp"
+                            android:onClick="boton13pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView10"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto14" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto10"
+                            android:layout_marginTop="16dp"
+                            android:text="Morcilla de Burgos "
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto10"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="37dp"
+                            android:layout_marginEnd="0dp"
+                            android:onClick="boton10pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView11"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FFFFFF"
+                    android:elevation="6dp"
+                    android:padding="16dp"
+                    android:radius="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#162534">
+
+                        <!-- Imagen del producto -->
+                        <ImageView
+                            android:id="@+id/imagenProducto11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/producto15" />
+
+                        <!-- Nombre del producto -->
+                        <TextView
+                            android:id="@+id/nombreProducto11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagenProducto11"
+                            android:layout_marginTop="16dp"
+                            android:text="Tocino de panceta"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <!-- Botón de Información Nutricional -->
+                        <Button
+                            android:id="@+id/botonInformacionNutricional11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nombreProducto11"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="37dp"
+                            android:onClick="boton11pulsado"
+                            android:text="Más info" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

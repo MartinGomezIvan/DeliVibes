@@ -52,9 +52,10 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
                     .replace(R.id.fragment_container, Fragment_Carta()).commit()
 
                 R.id.nave_item_seven -> supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, Fragment_PantallaInicio()).commit()
+                        .replace(R.id.fragment_container, Fragment_Reservas()).commit()
 
-//                R.id.nave_item_eight ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                R.id.nave_item_eight -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, Fragment_Productos()).commit()
 //                R.id.nave_item_nine ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
 //                R.id.nave_item_ten ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
             }
