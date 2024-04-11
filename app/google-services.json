@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594968275583",
+    "project_id": "delivibes",
+    "storage_bucket": "delivibes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594968275583:android:588c1d435cbb3443d06d4a",
+        "android_client_info": {
+          "package_name": "com.example.delivibes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSeybuU80Xl2P3SCusF1f2SO_BOthV434"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

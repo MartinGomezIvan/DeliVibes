@@ -47,7 +47,8 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             when(item.itemId){
 //                R.id.nave_item_three ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
 //                R.id.nave_item_four ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-//                R.id.nave_item_five ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                R.id.nave_item_five -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, Fragment_TerminosYCondiciones()).commit()
                 R.id.nave_item_six -> supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, Fragment_Carta()).commit()
 
@@ -56,8 +57,10 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
                 R.id.nave_item_eight -> supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, Fragment_Productos()).commit()
-//                R.id.nave_item_nine ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-//                R.id.nave_item_ten ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                R.id.nave_item_nine -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, Fragment_Compra()).commit()
+                R.id.nave_item_ten -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, Fragment_Cuenta()).commit()
             }
             drawer.closeDrawer(GravityCompat.START)
         return true

@@ -10,12 +10,19 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
 
 class InicioSesion : AppCompatActivity() {
-    private lateinit var meterEmail: EditText
-    private lateinit var meterPassword: EditText
+//    private lateinit var meterEmail: EditText
+//    private lateinit var meterPassword: EditText
     private lateinit var progressBar: ProgressBar
-
+    companion object {
+        lateinit var meterEmail: EditText
+        lateinit var meterPassword: EditText
+        var controllPage=0 //Variable para controlar si se ha accedido mediantre registro o inicio de sesion
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +31,7 @@ class InicioSesion : AppCompatActivity() {
          meterPassword = findViewById(R.id.password)
         val botonAcceder = findViewById<Button>(R.id.button)
         progressBar = findViewById(R.id.progressBar)
+        controllPage=1//La ponemos a 1, mientras que en registro, está en 2
 
 
         // Agrego un TextWatcher para los EditText, para después controlar el progressbar
@@ -72,9 +80,23 @@ class InicioSesion : AppCompatActivity() {
         val password= meterPassword.text.toString()
         if (email.isEmpty()|| password.isEmpty()){
             Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-        }else{//Luego cambiar esto para compararlo con la base de datos
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
+        }else{//Iniciar sesión en la base de datos, en la que nos avisará si se ha hecho o no
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                if (it.isSuccessful) {//Si se ha creado de forma satisfactoria, o ha pasado algo inesperado
+                    showNewContent()
+                } else {
+                    val builder = AlertDialog.Builder(this@InicioSesion)
+                    builder.setTitle("Error")
+                    builder.setMessage("Se ha producido un error autenticando al usuario. Inténtelo más tarde")
+                    builder.setPositiveButton("Aceptar", null)
+                    val dialog: AlertDialog = builder.create()
+                    dialog.show()
+                }
+            }
         }
+    }
+    private fun showNewContent(){
+        val intent = Intent(this, Menu::class.java)
+        startActivity(intent)
     }
 }

@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="151dp"
-        android:layout_height="16dp"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="255dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="212dp"
         android:text="Nuestros productos" />
 
     <ScrollView
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="90dp"
         android:layout_marginBottom="0dp"
         android:layout_marginEnd="8dp">
 
@@ -67,7 +67,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto"
                             android:layout_marginTop="16dp"
-                            android:text="Culetón de vaca madurada"
+                            android:text="Culetón de vaca madurada: 30€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -120,7 +120,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto2"
                             android:layout_marginTop="16dp"
-                            android:text="Lubina salvaje de temporada"
+                            android:text="Lubina salvaje de temporada: 19,90€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -178,7 +178,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto3"
                             android:layout_marginTop="16dp"
-                            android:text="Trufa negra (Melanosporum)"
+                            android:text="Trufa negra (Melanosporum): 1200€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -230,7 +230,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto4"
                             android:layout_marginTop="16dp"
-                            android:text="Revuelto de setas variadas"
+                            android:text="Revuelto de setas variadas: 15€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -289,7 +289,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto5"
                             android:layout_marginTop="16dp"
-                            android:text="Huevo de gallina en natural"
+                            android:text="Huevo de gallina en natural: 4€/doc"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -342,7 +342,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto6"
                             android:layout_marginTop="16dp"
-                            android:text="Queso semicurado de oveja"
+                            android:text="Queso semicurado de oveja: 2,20€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -401,7 +401,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto7"
                             android:layout_marginTop="16dp"
-                            android:text="Mermelada de frambuesa"
+                            android:text="Mermelada de frambuesa:   5,55€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -453,7 +453,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto8"
                             android:layout_marginTop="16dp"
-                            android:text="Chorizo criollo de Galicia"
+                            android:text="Chorizo criollo de Galicia: 9€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -511,7 +511,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto9"
                             android:layout_marginTop="16dp"
-                            android:text="Solomillo de cerdo premium"
+                            android:text="Solomillo de cerdo premium: 8,90€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -563,7 +563,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto13"
                             android:layout_marginTop="16dp"
-                            android:text="Arroz blanco de India"
+                            android:text="Arroz blanco de India: 2€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -621,7 +621,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto10"
                             android:layout_marginTop="16dp"
-                            android:text="Morcilla de Burgos "
+                            android:text="Morcilla de Burgos: 5,19€/kg "
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -674,7 +674,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/imagenProducto11"
                             android:layout_marginTop="16dp"
-                            android:text="Tocino de panceta"
+                            android:text="Tocino de panceta: 3,90€/kg"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 

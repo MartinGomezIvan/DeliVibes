@@ -71,7 +71,7 @@ class PantallaCarga : AppCompatActivity() {
     }
 
     fun pulsarBotonRegistro(view: View) {
-        val intent = Intent(this, InicioSesion::class.java)
+        val intent = Intent(this, Registrarse::class.java)
         startActivity(intent)
     }
 

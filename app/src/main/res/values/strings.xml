@@ -18,4 +18,63 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Términos y Condiciones de Uso -->
+    <string name="terminos_y_condiciones_largos">
+        Términos y Condiciones de Uso
+    </string>
+
+    <!-- Sección 1 -->
+    <string name="terminos_seccion_1">1. Introducción</string>
+    <string name="terminos_seccion_1_contenido">
+        Bienvenido a nuestra tienda en línea. Los siguientes términos y condiciones rigen el uso de nuestra tienda en línea y la compra de productos a través de ella. Al realizar una compra en nuestra tienda en línea, usted acepta estos términos y condiciones en su totalidad. Lea detenidamente estos términos y condiciones antes de realizar una compra. Si no está de acuerdo con estos términos y condiciones, no debe utilizar nuestra tienda en línea.
+    </string>
+
+    <!-- Sección 2 -->
+    <string name="terminos_seccion_2">2. Registro de Cuenta</string>
+    <string name="terminos_seccion_2_contenido">
+        Para realizar una compra en nuestra tienda en línea, puede que se le solicite que registre una cuenta. Al registrarse y proporcionar información personal, usted acepta que la información proporcionada es precisa, completa y actualizada en todo momento. Usted es responsable de mantener la confidencialidad de su cuenta y contraseña, y de restringir el acceso a su cuenta. Usted acepta ser responsable de todas las actividades que ocurran bajo su cuenta o contraseña.
+    </string>
+
+    <!-- Sección 3 -->
+    <string name="terminos_seccion_3">3. Productos y Precios</string>
+    <string name="terminos_seccion_3_contenido">
+        Nos esforzamos por mostrar con precisión los colores y las imágenes de nuestros productos en nuestra tienda en línea. No podemos garantizar que la visualización de cualquier color en su pantalla sea precisa. Nos reservamos el derecho de modificar los precios de nuestros productos en cualquier momento sin previo aviso. Nos esforzamos por ofrecer los productos más precisos y actualizados en nuestra tienda en línea, pero no garantizamos que la información de los productos sea precisa, completa o actualizada.
+    </string>
+
+    <!-- Sección 4 -->
+    <string name="terminos_seccion_4">4. Pagos y Métodos de Pago</string>
+    <string name="terminos_seccion_4_contenido">
+        Aceptamos una variedad de métodos de pago en nuestra tienda en línea, incluyendo tarjetas de crédito, tarjetas de débito y otras formas de pago seguras. Al realizar una compra, usted acepta pagar todos los cargos y tarifas asociados con la compra en su totalidad. Nos reservamos el derecho de rechazar cualquier pedido que sospechemos que sea fraudulento o indebido.
+    </string>
+
+    <!-- Sección 5 -->
+    <string name="terminos_seccion_5">5. Envíos y Entregas</string>
+    <string name="terminos_seccion_5_contenido">
+        Nos esforzamos por procesar y enviar todos los pedidos dentro del plazo especificado en nuestra tienda en línea. Sin embargo, no garantizamos el tiempo exacto de entrega y no seremos responsables de los retrasos en la entrega causados por circunstancias fuera de nuestro control.
+    </string>
+    <!-- Sección 6 -->
+    <string name="terminos_seccion_6">6. Devoluciones y Reembolsos</string>
+    <string name="terminos_seccion_6_contenido">
+        Se pueden aplicar políticas de devolución y reembolso a ciertos productos vendidos en nuestra tienda en línea. Por favor, consulte nuestras políticas de devolución y reembolso para obtener más información sobre cómo devolver un producto y obtener un reembolso.
+    </string>
+
+    <!-- Sección 7 -->
+    <string name="terminos_seccion_7">7. Propiedad Intelectual</string>
+    <string name="terminos_seccion_7_contenido">
+        Todos los derechos de propiedad intelectual relacionados con nuestros productos y nuestra tienda en línea son propiedad exclusiva nuestra o de nuestros licenciantes. Usted acepta no copiar, reproducir, distribuir o crear obras derivadas de nuestros productos o nuestra tienda en línea sin nuestro consentimiento previo por escrito.
+    </string>
+
+    <!-- Sección 8 -->
+    <string name="terminos_seccion_8">8. Ley Aplicable y Jurisdicción</string>
+    <string name="terminos_seccion_8_contenido">
+        Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de [país]. Usted acepta someterse a la jurisdicción exclusiva de los tribunales de [ciudad, país] para cualquier disputa que surja de o en relación con estos términos y condiciones.
+    </string>
+
+    <!-- Sección 9 -->
+    <string name="terminos_seccion_9">9. Cambios en los Términos y Condiciones</string>
+    <string name="terminos_seccion_9_contenido">
+        Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios entrarán en vigencia inmediatamente después de su publicación en nuestra tienda en línea. Es su responsabilidad revisar periódicamente estos términos y condiciones para verificar cualquier cambio. El uso continuado de nuestra tienda en línea después de la publicación de cualquier cambio constituirá su aceptación de dichos cambios.
+
+        Si tiene alguna pregunta sobre estos términos y condiciones, no dude en ponerse en contacto con nosotros.
+    </string>
 </resources>
