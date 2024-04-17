@@ -3,6 +3,7 @@ package com.example.delivibes
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -29,12 +30,12 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         toggle= ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer.addDrawerListener(toggle)
         toggle.syncState()
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-//        supportActionBar?.setHomeButtonEnabled(true)
 
-        val navigationView:NavigationView= findViewById(R.id.nav_view)
+    window.statusBarColor = Color.parseColor("#162534")//Se cambia el color de la barra de estado (donde aparece el wifi, la batería...)
+
+
+    val navigationView:NavigationView= findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
-//        context = this // Almacena una referencia al contexto de la actividad actual
 
     if (savedInstanceState == null) {
         supportFragmentManager.beginTransaction()
@@ -45,8 +46,6 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
             when(item.itemId){
-//                R.id.nave_item_three ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
-//                R.id.nave_item_four ->Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
                 R.id.nave_item_five -> supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, Fragment_TerminosYCondiciones()).commit()
                 R.id.nave_item_six -> supportFragmentManager.beginTransaction()

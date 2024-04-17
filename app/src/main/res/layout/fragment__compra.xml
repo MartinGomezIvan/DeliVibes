@@ -7,13 +7,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="426dp"
+        android:layout_toEndOf="@+id/cantidad"
+        android:src="@drawable/baseline_house_24" />
+
+    <ImageView
         android:id="@+id/imageView13"
         android:layout_width="44dp"
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="9dp"
         android:src="@drawable/baseline_search_24" />
 
     <AutoCompleteTextView
@@ -23,17 +33,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="95dp"
         android:hint="Buscar Producto" />
 
     <Button
         android:id="@+id/btnPagar"
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="142dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="146dp"
         android:text="Pagar" />
 
     <EditText
@@ -97,11 +109,46 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="427dp"
         android:ems="10"
         android:hint="Dirección"
         android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="188dp"
+        android:layout_toEndOf="@+id/cantidad"
+        android:src="@drawable/baseline_scale_24" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="312dp"
+        android:layout_toEndOf="@+id/cantidad"
+        android:src="@drawable/baseline_info_24" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="74dp"
+        android:text="COMPRAR"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </RelativeLayout>

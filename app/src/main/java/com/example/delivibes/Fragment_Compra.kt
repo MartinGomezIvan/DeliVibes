@@ -2,6 +2,9 @@ package com.example.delivibes
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.fragment.app.Fragment
@@ -12,6 +15,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 
@@ -55,6 +59,9 @@ class Fragment_Compra : Fragment() {
         val info = view.findViewById<EditText>(R.id.info)
         val direccion = view.findViewById<EditText>(R.id.direccion)
 
+        btnPagar.setBackgroundColor(Color.parseColor("#FFA500"))//Color del botón en naranja
+
+
 
         // Manejar el botón "Pagar"
         btnPagar.setOnClickListener {
@@ -68,7 +75,7 @@ class Fragment_Compra : Fragment() {
                 // Mostrar un mensaje de error si alguna de las casillas no está completada
                 AlertDialog.Builder(requireContext())
                     .setTitle("Error")
-                    .setMessage("Por favor, complete todos los campos.")
+                    .setMessage("Por favor, complete todos los campos."+"\n"+"Recuerde que las unidades sólo pueden ser kg o docenas")
                     .setPositiveButton(android.R.string.ok, null)
                     .show()
             }
@@ -77,7 +84,20 @@ class Fragment_Compra : Fragment() {
 
 //         Función para validar que todos los campos estén completados
     private fun validateInputs(producto: String, cantidad: String, info: String, direccion: String): Boolean {
-        return !(TextUtils.isEmpty(producto) || TextUtils.isEmpty(cantidad) || TextUtils.isEmpty(info) || TextUtils.isEmpty(direccion))
+//
+    // Verificar que ningún campo esté vacío
+    if (TextUtils.isEmpty(producto) || TextUtils.isEmpty(cantidad) || TextUtils.isEmpty(info) || TextUtils.isEmpty(direccion)) {
+        return false
+    }
+
+    // Verificar que el campo "cantidad" contenga un número seguido de "kg", "docena" o "docenas"
+    val cantidadRegex = """^\d+\s*(kg|docena|docenas)$""".toRegex()
+    if (!cantidad.matches(cantidadRegex)) {
+        return false
+    }
+
+    // Si pasa ambas validaciones, retornar true
+    return true
     }
 
     // Función para mostrar el diálogo de pago exitoso
@@ -90,7 +110,7 @@ class Fragment_Compra : Fragment() {
         val numeroTarjetaEditText = dialogView.findViewById<EditText>(R.id.numeroTarjetaEditText)
         val codigoPostalEditText = dialogView.findViewById<EditText>(R.id.codigoPostalEditText)
 
-        val builder = AlertDialog.Builder(requireContext())
+        val builder = AlertDialog.Builder(requireContext())//Mostrar el alert
             .setView(dialogView)
             .setTitle("Resumen de pedido:")
             .setMessage("Producto: $producto1\nCantidad: $cantidad1\nInformación adicional: $info1\nDirección: $direccion1\nTotal a pagar: $precio")
@@ -119,8 +139,17 @@ class Fragment_Compra : Fragment() {
                         .show()
                 }
             }
-        val dialog = builder.create()
-        dialog.show()
+        // Personalización del AlertDialog
+        val colorText = Color.WHITE
+        val colorButton = Color.parseColor("#FFA500")
+
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        // Cambiar el color del texto de los botones (el de aceptar)
+        val positiveButton = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE)
+        positiveButton.setTextColor(colorText)
+        positiveButton.setBackgroundColor(colorButton)
     }
 
     // Función para validar que ambos campos de la tarjeta estén completados
@@ -128,11 +157,12 @@ class Fragment_Compra : Fragment() {
         return !(TextUtils.isEmpty(numeroTarjeta) || TextUtils.isEmpty(codigoPostal))
     }
 
-    private fun calculatePrice(producto: EditText, cantidad: EditText){
+    private fun calculatePrice(producto: EditText, cantidad: EditText){//Función en la que calculamos los precios
         val producto1=producto.text.toString()
         val cantidadText = cantidad.text.toString()
 
         // Extraer el número inicial de la cantidad usando una expresión regular
+        //Ejemplo, 2 kg, extraemos el 2
         val regex = """^\d+""".toRegex()
         val matchResult = regex.find(cantidadText)
         val cantidad1 = matchResult?.value?.toDouble()

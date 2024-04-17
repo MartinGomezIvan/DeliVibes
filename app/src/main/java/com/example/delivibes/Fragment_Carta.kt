@@ -75,7 +75,7 @@ class Fragment_Carta : Fragment() {
         mostrarTerceraTarjeta(selecInicial)
     }
 
-    private fun mostrarPrimeraTarjeta(selec: String) {
+    private fun mostrarPrimeraTarjeta(selec: String) {//Configuramos el contenido de la priemra tarjeta
         when (selec) {
             "Primer plato" -> {
                 imagen1.setImageResource(R.drawable.primerplato1)
@@ -95,7 +95,7 @@ class Fragment_Carta : Fragment() {
         }
     }
 
-    private fun mostrarSegundaTarjeta(selec: String) {
+    private fun mostrarSegundaTarjeta(selec: String) {//Configuramos el contenido de la segunda tarjeta
         when (selec) {
             "Primer plato" -> {
                 imagen2.setImageResource(R.drawable.primerplato2)
@@ -115,7 +115,7 @@ class Fragment_Carta : Fragment() {
         }
     }
 
-    private fun mostrarTerceraTarjeta(selec: String) {
+    private fun mostrarTerceraTarjeta(selec: String) {//Configuramos el contenido de la tercera tarjeta
         when (selec) {
             "Primer plato" -> {
                 imagen3.setImageResource(R.drawable.primerplato3)

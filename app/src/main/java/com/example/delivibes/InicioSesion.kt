@@ -1,6 +1,7 @@
 package com.example.delivibes
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -15,7 +16,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 
 class InicioSesion : AppCompatActivity() {
-//    private lateinit var meterEmail: EditText
+    //    private lateinit var meterEmail: EditText
 //    private lateinit var meterPassword: EditText
     private lateinit var progressBar: ProgressBar
     companion object {
@@ -27,11 +28,15 @@ class InicioSesion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_sesion)
-         meterEmail = findViewById(R.id.email)
-         meterPassword = findViewById(R.id.password)
+        meterEmail = findViewById(R.id.email)
+        meterPassword = findViewById(R.id.password)
         val botonAcceder = findViewById<Button>(R.id.button)
         progressBar = findViewById(R.id.progressBar)
         controllPage=1//La ponemos a 1, mientras que en registro, está en 2
+
+        botonAcceder.setBackgroundColor(Color.parseColor("#FFA500"))//Pongo el color del botón a naranja
+        window.statusBarColor = Color.parseColor("#162534")//Se cambia el color de la barra de estado (donde aparece el wifi, la batería...)
+
 
 
         // Agrego un TextWatcher para los EditText, para después controlar el progressbar

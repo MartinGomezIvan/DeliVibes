@@ -8,13 +8,14 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="194dp"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="68dp"
-        android:layout_marginEnd="212dp"
-        android:text="Nuestros productos" />
+        android:layout_marginEnd="108dp"
+        android:text="NUESTROS PRODUCTOS"
+        android:textStyle="italic" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -78,8 +79,8 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/nombreProducto"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginTop="16dp"
-                            android:background="#66C2FF"
+                            android:layout_marginTop="41dp"
+                            android:layout_marginEnd="0dp"
                             android:onClick="boton1pulsado"
                             android:text="Más info" />
 
@@ -132,6 +133,7 @@
                             android:layout_below="@id/nombreProducto2"
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="16dp"
+                            android:layout_marginEnd="0dp"
                             android:onClick="boton2pulsado"
                             android:text="Más info" />
 
@@ -189,7 +191,8 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/nombreProducto3"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="0dp"
                             android:onClick="boton3pulsado"
                             android:text="Más info" />
 
@@ -241,7 +244,8 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/nombreProducto4"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="41dp"
+                            android:layout_marginEnd="0dp"
                             android:onClick="boton4pulsado"
                             android:text="Más info" />
 
@@ -301,7 +305,7 @@
                             android:layout_below="@id/nombreProducto5"
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="41dp"
-                            android:layout_marginEnd="-2dp"
+                            android:layout_marginEnd="1dp"
                             android:onClick="boton5pulsado"
                             android:text="Más info" />
 
@@ -412,7 +416,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/nombreProducto7"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="20dp"
                             android:onClick="boton7pulsado"
                             android:text="Más info" />
 
@@ -464,7 +468,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/nombreProducto8"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="41dp"
                             android:onClick="boton8pulsado"
                             android:text="Más info" />
 

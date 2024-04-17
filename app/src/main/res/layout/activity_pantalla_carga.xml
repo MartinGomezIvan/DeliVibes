@@ -25,14 +25,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="592dp"
-        android:text="Tu franquicia de comida favorita"
-        android:textSize="18sp"
+        android:layout_marginBottom="576dp"
+        android:elevation="10dp"
+        android:text="&quot;Sabores que inspiran, momentos que deleitan.&quot;"
+        android:textSize="15sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -82,52 +82,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/comidaImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="628dp"
-        android:elevation="0dp"
-        android:src="@drawable/cubiertos"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/comidaImageView3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="628dp"
-        android:elevation="0dp"
-        android:src="@drawable/cubiertos"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/comidaImageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="4dp"
-        android:elevation="0dp"
-        android:src="@drawable/cubiertos"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/comidaImageView5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="612dp"
-        android:layout_marginEnd="4dp"
-        android:elevation="0dp"
-        android:src="@drawable/cubiertos"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/imageView18"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

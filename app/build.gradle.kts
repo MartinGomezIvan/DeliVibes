@@ -59,4 +59,6 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore:24.11.0")
+    implementation ("com.google.code.gson:gson:2.8.8")
+
 }

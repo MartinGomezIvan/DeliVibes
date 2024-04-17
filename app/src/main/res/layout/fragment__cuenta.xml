@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView14"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="34dp"
         android:text="Email:" />
 
     <TextView
@@ -30,9 +30,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="136dp"
         android:text="Apellidos:" />
+
+    <EditText
+        android:id="@+id/dos"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="123dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <TextView
         android:id="@+id/textView28"
@@ -40,9 +52,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="87dp"
-        android:text="Teléfono" />
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="192dp"
+        android:text="Teléfono:" />
+
+    <EditText
+        android:id="@+id/tres"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="178dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <TextView
         android:id="@+id/textView25"
@@ -50,9 +74,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="81dp"
         android:text="Nombre:" />
+
+    <EditText
+        android:id="@+id/uno"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="70dp"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <!-- Focusable y focusableInTouchMode es para que no puedas pulsarlo !-->
 
     <TextView
         android:id="@+id/textView24"
@@ -60,8 +97,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="33dp"
         android:text="Contraseña:" />
 
     <ImageView
@@ -72,7 +109,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="371dp"
+        android:layout_marginTop="500dp"
         android:layout_marginEnd="-1dp"
         android:background="@color/black" />
 
@@ -82,67 +119,75 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="532dp"
         android:text="Salir" />
 
     <TextView
         android:id="@+id/salidaEmail"
-        android:layout_width="196dp"
+        android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="61dp"
-        android:layout_toEndOf="@+id/textView26"
-        android:text="TextView" />
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/textView26" />
 
     <TextView
         android:id="@+id/salidaPassword"
-        android:layout_width="193dp"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="251dp"
-        android:layout_marginEnd="62dp"
-        android:layout_toEndOf="@+id/textView27"
-        android:text="TextView" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="46dp"
+        android:layout_toEndOf="@+id/textView27" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="461dp"
+        android:src="@drawable/linea" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="409dp"
+        android:src="@drawable/linea" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="532dp"
+        android:text="Eliminar cuenta" />
 
     <TextView
-        android:id="@+id/salidaNombre"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="62dp"
-        android:layout_toEndOf="@+id/textView27"
-        android:text="TextView" />
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="71dp"
+        android:text="CUENTA"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/salidaApellidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="306dp"
-        android:layout_marginEnd="62dp"
-        android:layout_toEndOf="@+id/textView27"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/salidaTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginEnd="62dp"
-        android:layout_toEndOf="@+id/textView27"
-        android:text="TextView" />
 </RelativeLayout>

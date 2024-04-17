@@ -24,24 +24,24 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="216dp" />
 
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="40dp"
                 android:layout_height="36dp"
                 android:layout_below="@id/calendarView"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="-318dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-284dp"
                 android:layout_toEndOf="@+id/telefono"
                 android:src="@drawable/baseline_local_phone_24" />
-
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="40dp"
                 android:layout_height="36dp"
                 android:layout_below="@id/calendarView"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="-375dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="-346dp"
                 android:layout_toEndOf="@+id/telefono"
                 android:src="@drawable/baseline_drive_file_rename_outline_24" />
 
@@ -50,8 +50,8 @@
                 android:layout_width="40dp"
                 android:layout_height="36dp"
                 android:layout_below="@id/calendarView"
-                android:layout_marginStart="-39dp"
-                android:layout_marginTop="476dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="470dp"
                 android:layout_toEndOf="@+id/telefono"
                 android:src="@drawable/baseline_people_24" />
 
@@ -62,7 +62,7 @@
                 android:layout_below="@id/calendarView"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="22dp"
-                android:layout_marginTop="-377dp"
+                android:layout_marginTop="-350dp"
                 android:ems="10"
                 android:hint="Nombre"
                 android:inputType="text" />
@@ -85,10 +85,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/telefono"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="46dp"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="16dp"
-                android:text="Día" />
+                android:text="Día"
+                android:textStyle="italic" />
 
             <TimePicker
                 android:id="@+id/timePicker"
@@ -97,7 +98,8 @@
                 android:layout_below="@id/textView16"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="282dp" />
+                android:layout_marginTop="220dp"
+                android:background="#162534"/>
 
             <TextView
                 android:id="@+id/textView17"
@@ -108,43 +110,20 @@
                 android:layout_marginStart="23dp"
                 android:layout_marginTop="883dp"
                 android:layout_marginBottom="284dp"
-                android:text="Número de personas" />
+                android:text="Número de personas"
+                android:textStyle="italic"/>
 
             <TextView
                 android:id="@+id/textView18"
-                android:layout_width="wrap_content"
+                android:layout_width="68dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="463dp"
-                android:layout_marginEnd="369dp"
+                android:layout_marginTop="443dp"
+                android:layout_marginEnd="263dp"
                 android:layout_marginBottom="11dp"
-                android:text="Hora" />
-
-            <EditText
-                android:id="@+id/tarjeta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="1069dp"
-                android:layout_marginEnd="221dp"
-                android:layout_marginBottom="2dp"
-                android:ems="10"
-                android:hint="Núm. Trajeta"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/codigoPostal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="1114dp"
-                android:layout_marginEnd="221dp"
-                android:ems="10"
-                android:hint="Cód. Postal"
-                android:inputType="number" />
+                android:text="Hora"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/textView22"
@@ -155,18 +134,19 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="1036dp"
                 android:layout_marginBottom="24dp"
-                android:text="Confirmar Pago" />
+                android:text="Validar y reservar"
+                android:textStyle="italic" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
+                android:layout_width="141dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="1090dp"
-                android:layout_marginEnd="62dp"
+                android:layout_marginTop="1066dp"
+                android:layout_marginEnd="212dp"
                 android:onClick="pulsarBotonPagar"
-                android:text="Pagar" />
+                android:text="Reservar" />
 
             <EditText
                 android:id="@+id/numeroPersonas"
@@ -174,11 +154,26 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="911dp"
-                android:layout_marginEnd="210dp"
+                android:layout_marginTop="913dp"
+                android:layout_marginEnd="138dp"
                 android:ems="10"
                 android:hint="Ej: 4 personas"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="70dp"
+                android:text="RESERVAS"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </RelativeLayout>
     </ScrollView>

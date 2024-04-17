@@ -23,7 +23,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.233"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></TextView>
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="italic"></TextView>
 
         <TextView
             android:id="@+id/textView12"
@@ -33,16 +34,19 @@
             android:layout_marginTop="304dp"
             android:text="Disfrute de nuestros mejores productos"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></TextView>
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="italic"></TextView>
 
         <TextView
+            android:id="@+id/textView30"
             android:layout_width="167dp"
             android:layout_height="0dp"
             android:layout_marginStart="56dp"
             android:layout_marginTop="508dp"
             android:text="Elija la mejor promoción"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -144,6 +148,16 @@
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/boda4" />
         </ViewFlipper>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="204dp"
+            android:text="Muy pronto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
