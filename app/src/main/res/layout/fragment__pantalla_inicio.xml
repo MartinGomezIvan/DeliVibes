@@ -18,13 +18,16 @@
         <TextView
             android:layout_width="171dp"
             android:layout_height="18dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="80dp"
+            android:background="#162534"
             android:text="Deguste nuestros menús"
+            android:textColor="@color/white"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="italic"></TextView>
+            app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <TextView
             android:id="@+id/textView12"
@@ -35,7 +38,9 @@
             android:text="Disfrute de nuestros mejores productos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="italic"></TextView>
+            android:textStyle="italic"
+            android:background="#162534"
+            android:textColor="@color/white"></TextView>
 
         <TextView
             android:id="@+id/textView30"
@@ -46,7 +51,8 @@
             android:text="Elija la mejor promoción"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="italic">
+            android:textStyle="italic"            android:background="#162534"
+            android:textColor="@color/white">
 
         </TextView>
 
@@ -148,16 +154,6 @@
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/boda4" />
         </ViewFlipper>
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginBottom="204dp"
-            android:text="Muy pronto"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

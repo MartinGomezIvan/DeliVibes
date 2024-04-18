@@ -34,7 +34,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     window.statusBarColor = Color.parseColor("#162534")//Se cambia el color de la barra de estado (donde aparece el wifi, la batería...)
 
 
-    val navigationView:NavigationView= findViewById(R.id.nav_view)
+        val navigationView:NavigationView= findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
     if (savedInstanceState == null) {
@@ -46,6 +46,8 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
             when(item.itemId){
+                R.id.nave_item_three -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, Fragment_Promociones()).commit()
                 R.id.nave_item_five -> supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, Fragment_TerminosYCondiciones()).commit()
                 R.id.nave_item_six -> supportFragmentManager.beginTransaction()
