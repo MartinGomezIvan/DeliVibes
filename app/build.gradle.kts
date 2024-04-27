@@ -60,5 +60,7 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore:24.11.0")
     implementation ("com.google.code.gson:gson:2.8.8")
+    implementation ("com.airbnb.android:lottie:4.2.0")
+
 
 }

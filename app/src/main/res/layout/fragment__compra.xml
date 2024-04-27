@@ -5,14 +5,42 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_Compra"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Bocadillo -->
+    <LinearLayout
+        android:id="@+id/bocadillo"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="171dp"
+        android:background="#66c2ff"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para habilitar el resto de campos, pulse el botón Ver con un producto elegido"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnOcultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ocultar" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="44dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="426dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="492dp"
         android:layout_toEndOf="@+id/cantidad"
         android:src="@drawable/baseline_house_24" />
 
@@ -43,10 +71,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="146dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="56dp"
         android:text="Pagar" />
+
 
     <EditText
         android:id="@+id/cantidad"
@@ -54,8 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="297dp"
         android:ems="10"
         android:hint="Ej: 2 kg, 1 docena"
         android:inputType="text" />
@@ -66,9 +95,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="263dp"
         android:text="Cantidad a comprar" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="158dp"
+        android:text="Cantidad disponible" />
 
     <TextView
         android:id="@+id/textView21"
@@ -76,8 +115,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="261dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="363dp"
         android:text="Información adicional" />
 
     <TextView
@@ -86,10 +125,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="459dp"
         android:text="¿Donde envíamos el producto?" />
-
 
     <EditText
         android:id="@+id/info"
@@ -97,8 +135,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="311dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="393dp"
         android:ems="10"
         android:hint="Ej:Tamaño, caducidad "
         android:inputType="text" />
@@ -109,8 +147,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="427dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="491dp"
         android:ems="10"
         android:hint="Dirección"
         android:inputType="text" />
@@ -120,8 +158,8 @@
         android:layout_width="44dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="299dp"
         android:layout_toEndOf="@+id/cantidad"
         android:src="@drawable/baseline_scale_24" />
 
@@ -130,8 +168,8 @@
         android:layout_width="44dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="395dp"
         android:layout_toEndOf="@+id/cantidad"
         android:src="@drawable/baseline_info_24" />
 
@@ -150,5 +188,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="189dp"
+        android:onClick="pulsarBotonVer"
+        android:text="Ver" />
 </RelativeLayout>

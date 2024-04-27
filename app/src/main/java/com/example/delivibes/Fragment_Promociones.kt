@@ -21,8 +21,8 @@ class Fragment_Promociones : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bocadillo = view.findViewById(R.id.bocadillo);
-        btnOcultar = view.findViewById(R.id.btnOcultar);
+        bocadillo = view.findViewById(R.id.bocadillo)
+        btnOcultar = view.findViewById(R.id.btnOcultar)
         btnOcultar.setBackgroundColor(Color.parseColor("#FFA500"))//Color del botón en naranja
 
 
