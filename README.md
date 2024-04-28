@@ -1,5 +1,5 @@
 # DeliVibes
 Repositorio del proyecto de DeliVibes
 
-Primer Commit
-He realizado la págna de login, de registro, la inicial y la de vista del menú. A esperas de avances
+Aplicación de gestión de restaurante
+La aplicación dispone de funcionalidades como ver el menú, reservar, ver los productos disponibles en la tienda del restaurante, comprar y leer información acerca de las promociones que ofrece el restaurante.
