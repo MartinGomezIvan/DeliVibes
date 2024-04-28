@@ -75,7 +75,7 @@ class Registrarse : AppCompatActivity() {
                             showErrorDialog("Error al guardar los datos del usuario en la base de datos")
                         }
                     } else {
-                        showErrorDialog("Error al crear el usuario")
+                        showErrorDialog("El email ya existe o se ha introducido datos erróneos")
                     }
                 }
         }

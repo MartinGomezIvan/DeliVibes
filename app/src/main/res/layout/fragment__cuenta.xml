@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Cuenta">
+    tools:context=".Fragment_Cuenta"
+    android:background="@drawable/fondo">
 
     <ImageView
         android:id="@+id/imageView14"
@@ -113,6 +114,30 @@
         android:layout_marginEnd="-1dp"
         android:background="@color/black" />
 
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="136dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="43dp"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="110dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="42dp"
+        android:background="@color/black" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -144,26 +169,6 @@
         android:layout_marginTop="285dp"
         android:layout_marginEnd="46dp"
         android:layout_toEndOf="@+id/textView27" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="122dp"
-        android:layout_marginBottom="461dp"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="409dp"
-        android:src="@drawable/linea" />
 
     <Button
         android:id="@+id/button5"

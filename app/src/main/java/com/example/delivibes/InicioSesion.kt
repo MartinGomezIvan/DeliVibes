@@ -92,7 +92,7 @@ class InicioSesion : AppCompatActivity() {
                 } else {
                     val builder = AlertDialog.Builder(this@InicioSesion)
                     builder.setTitle("Error")
-                    builder.setMessage("Se ha producido un error autenticando al usuario. Inténtelo más tarde")
+                    builder.setMessage("Se ha producido un error autenticando al usuario. Revise los datos introducidos")
                     builder.setPositiveButton("Aceptar", null)
                     val dialog: AlertDialog = builder.create()
                     dialog.show()

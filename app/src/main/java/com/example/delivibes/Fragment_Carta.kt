@@ -79,8 +79,8 @@ class Fragment_Carta : Fragment() {
         when (selec) {
             "Primer plato" -> {
                 imagen1.setImageResource(R.drawable.primerplato1)
-                titulo1.text = "Revuelto de setas con huevo."
-                texto1.text = "Contiene: Setas, huevos, cebolla."
+                titulo1.text = "Revuelto de setas con gambas."
+                texto1.text = "Contiene: Setas, huevos, cebolla, gambas."
             }
             "Segundo plato" -> {
                 imagen1.setImageResource(R.drawable.segundoplato1)
@@ -100,7 +100,7 @@ class Fragment_Carta : Fragment() {
             "Primer plato" -> {
                 imagen2.setImageResource(R.drawable.primerplato2)
                 titulo2.text = "Espaguetis a la carbonara."
-                texto2.text = "Contiene: Huevo, queso parmesano, bacon, espaguetis."
+                texto2.text = "Contiene: Huevo, queso, bacon, espaguetis."
             }
             "Segundo plato" -> {
                 imagen2.setImageResource(R.drawable.segundoplato2)

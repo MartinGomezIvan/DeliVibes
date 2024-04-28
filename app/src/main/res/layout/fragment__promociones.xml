@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Promociones">
+    tools:context=".Fragment_Promociones"
+    android:background="@drawable/fondo">
     <TextView
         android:id="@+id/textView19"
         android:layout_width="298dp"
@@ -116,7 +117,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="142dp"
-                    android:text="En nuestro encantador restaurante, transformamos momentos especiales en recuerdos inolvidables. Con una combinación perfecta de exquisita gastronomía y un ambiente acogedor, estamos dedicados a hacer que cada boda sea verdaderamente memorable. Desde cenas íntimas hasta grandes celebraciones, nuestro equipo experto se encarga de cada detalle para garantizar una experiencia única y personalizada. Déjanos ser parte de tu día especial y crear juntos un banquete que deleite los sentidos y celebre el amor."
+                    android:text="En nuestro encantador restaurante, transformamos momentos especiales en recuerdos inolvidables. Con una combinación perfecta de exquisita gastronomía y un ambiente acogedor, estamos dedicados a hacer que cada boda sea verdaderamente memorable. Desde cenas íntimas hasta grandes celebraciones, nuestro equipo experto se encarga de cada detalle para garantizar una experiencia única y personalizada. Déjanos ser parte de tu día especial y crear juntos un banquete que no olvidarás jamás."
                     android:textColor="@color/white" />
 
             </RelativeLayout>
@@ -181,7 +182,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="142dp"
-                    android:text="En nuestro restaurante, celebrar un cumpleaños se convierte en una experiencia única y memorable. Con una combinación excepcional de deliciosa cocina y un ambiente acogedor, nos dedicamos a hacer de cada celebración un momento especial. Desde íntimas reuniones familiares hasta grandes fiestas con amigos, nuestro equipo se esmera en cada detalle para asegurar una experiencia personalizada y llena de diversión. Permítenos ser parte de tu día especial y crear juntos un evento que celebre la alegría y los buenos momentos."
+                    android:text="En nuestro restaurante, celebrar un cumpleaños se convierte en una experiencia única y memorable. Con una combinación excepcional de deliciosa cocina y un ambiente acogedor, nos dedicamos a hacer de cada celebración un momento especial. Desde íntimas reuniones familiares hasta grandes fiestas con amigos, nuestro equipo se esmera en cada detalle para asegurar una experiencia personalizada y llena de diversión. Permítenos ser parte de tu día especial y crear juntos un evento en el que no faltará la alegría y los buenos momentos."
                     android:textColor="@color/white" />
 
             </RelativeLayout>
