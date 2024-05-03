@@ -22,6 +22,7 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.widget.addTextChangedListener
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
@@ -119,6 +120,14 @@ class Fragment_Compra : Fragment() {
                     .show()
             }
         }
+        // Manejar el botón de retroceso para ir a la actividad Menu
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val intent = Intent(requireContext(), Menu::class.java)
+                startActivity(intent)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
     }
 
     private fun mostrarBocadillo() {

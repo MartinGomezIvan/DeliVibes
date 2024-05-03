@@ -1,5 +1,6 @@
 package com.example.delivibes
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.OnBackPressedDispatcher
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 class Fragment_Carta : Fragment() {
@@ -73,6 +76,16 @@ class Fragment_Carta : Fragment() {
         mostrarPrimeraTarjeta(selecInicial)
         mostrarSegundaTarjeta(selecInicial)
         mostrarTerceraTarjeta(selecInicial)
+
+        // Manejar el botón de retroceso para ir a la actividad Menu
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val intent = Intent(requireContext(), Menu::class.java)
+                startActivity(intent)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
+
     }
 
     private fun mostrarPrimeraTarjeta(selec: String) {//Configuramos el contenido de la priemra tarjeta
@@ -134,7 +147,6 @@ class Fragment_Carta : Fragment() {
             }
         }
     }
-
 
 
 }

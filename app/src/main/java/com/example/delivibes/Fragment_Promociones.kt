@@ -1,5 +1,6 @@
 package com.example.delivibes
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import androidx.activity.OnBackPressedCallback
 
 class Fragment_Promociones : Fragment() {
     private lateinit var bocadillo: LinearLayout
@@ -33,6 +35,14 @@ class Fragment_Promociones : Fragment() {
         btnOcultar.setOnClickListener {
             ocultarBocadillo()
         }
+        // Manejar el botón de retroceso para ir a la actividad Menu
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val intent = Intent(requireContext(), Menu::class.java)
+                startActivity(intent)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
 }
     private fun mostrarBocadillo() {
         bocadillo.visibility = View.VISIBLE

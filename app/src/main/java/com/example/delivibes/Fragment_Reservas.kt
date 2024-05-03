@@ -17,6 +17,7 @@ import android.widget.ImageButton
 import android.widget.TimePicker
 import android.widget.Toast
 import android.widget.ToggleButton
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.Navigation.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
@@ -65,6 +66,14 @@ class Fragment_Reservas : Fragment() {
         verReservasButton.setOnClickListener {
             mostrarReservas()
         }
+        // Manejar el botón de retroceso para ir a la actividad Menu
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val intent = Intent(requireContext(), Menu::class.java)
+                startActivity(intent)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
     }
 
     fun pulsarBotonPagar() {

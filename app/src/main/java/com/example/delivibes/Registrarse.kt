@@ -92,4 +92,5 @@ class Registrarse : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
+
 }

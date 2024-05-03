@@ -83,7 +83,7 @@
                             android:layout_marginTop="41dp"
                             android:layout_marginEnd="0dp"
                             android:onClick="boton1pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -136,7 +136,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="0dp"
                             android:onClick="boton2pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -195,7 +195,7 @@
                             android:layout_marginTop="20dp"
                             android:layout_marginEnd="0dp"
                             android:onClick="boton3pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -248,7 +248,7 @@
                             android:layout_marginTop="41dp"
                             android:layout_marginEnd="0dp"
                             android:onClick="boton4pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -308,7 +308,7 @@
                             android:layout_marginTop="41dp"
                             android:layout_marginEnd="1dp"
                             android:onClick="boton5pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -361,7 +361,7 @@
                             android:layout_marginTop="41dp"
                             android:layout_marginEnd="1dp"
                             android:onClick="boton6pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -419,7 +419,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="20dp"
                             android:onClick="boton7pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -471,7 +471,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="41dp"
                             android:onClick="boton8pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -529,7 +529,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="16dp"
                             android:onClick="boton9pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -581,7 +581,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="16dp"
                             android:onClick="boton13pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -640,7 +640,7 @@
                             android:layout_marginTop="37dp"
                             android:layout_marginEnd="0dp"
                             android:onClick="boton10pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
 
@@ -692,7 +692,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="37dp"
                             android:onClick="boton11pulsado"
-                            android:text="Más info" />
+                            android:text="Inf. Nutricional" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
