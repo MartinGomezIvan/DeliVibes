@@ -50,7 +50,7 @@ class Registrarse : AppCompatActivity() {
         if (nombre.isEmpty() || apellidos.isEmpty() || password.isEmpty() || email.isEmpty() || telefono.isEmpty() ){
             Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
         }else if(password.length < 8 || password.none { it.isUpperCase() }){//Que la contraseña no tenga minimo 8 o ninguna mayúscula
-            Toast.makeText(this, "La contraseña debe tener al menos 8 caracteres y contener al menos una mayúscula", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "La contraseña debe tener al menos 8 caracteres y mínimo una mayúscula", Toast.LENGTH_SHORT).show()
         }else{
 //            Que nos cree un nuevo registro en el authentication, además, que nos notifique cuando eso ocurra
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)

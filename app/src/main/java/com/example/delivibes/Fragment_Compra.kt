@@ -212,7 +212,7 @@ class Fragment_Compra : Fragment() {
                 // La cantidad ingresada es mayor que la cantidad disponible en la base de datos
                 AlertDialog.Builder(requireContext())
                     .setTitle("Error")
-                    .setMessage("La cantidad ingresada es mayor que la cantidad disponible en la base de datos.")
+                    .setMessage("La cantidad ingresada es mayor que la cantidad disponible en la tienda.")
                     .setPositiveButton(android.R.string.ok, null)
                     .show()
                 return false
@@ -244,7 +244,7 @@ class Fragment_Compra : Fragment() {
         val builder = AlertDialog.Builder(requireContext())//Mostrar el alert
             .setView(dialogView)
             .setTitle("Resumen de pedido:")
-            .setMessage("Producto: $producto1\nCantidad: $cantidad1\nInformación adicional: $info1\nDirección: $direccion1\nTotal a pagar: $precio")
+            .setMessage("Producto: $producto1\nCantidad: $cantidad1\nInformación adicional: $info1\nDirección: $direccion1\nTotal a pagar: $precio €")
             .setPositiveButton("Aceptar") { dialog, _ ->
                 val numeroTarjeta = numeroTarjetaEditText.text.toString()
                 val codigoPostal = codigoPostalEditText.text.toString()
